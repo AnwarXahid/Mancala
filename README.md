@@ -10,7 +10,7 @@ The task is to implement a game player for mancala.
 A heuristic functions estimates how good a particular state is for a player. A number of factors determine whether 
 a given state of the game is good for a player.  
 
-#Mancala heuristics:
+# Mancala-heuristics
 In Mancala, the board consists of six (6) bins on each side, and a home position (called storage) on the right of the bins. 
 The board is laid out typically starting with four stones in each bin and both storage bins empty.
 For Mancala, the following strategic factors  can be used to design a good heuristic to determine how favorable a
@@ -39,14 +39,14 @@ if it is going to be overflowed to my opponent's side )
 (10)	Have I captured any stone
 You can experiment with the following four heuristics (and some of your own heuristics): 
 
-#heuristic-1: The evaluation function is
+# heuristic-1: The evaluation function is
 ( stones_in_my_storage – stones_in_opponents_storage )
 
-#heuristic-2: The evaluation function is
+# heuristic-2: The evaluation function is
 W1 * (stones_in_my_storage – stones_in_opponents_storage) + W2 * (stones_on_my_side – stones_on_opponents_side)
 
-#heuristic-3: The evaluation function is
+# heuristic-3: The evaluation function is
 W1 * (stones_in_my_storage – stones_in_opponents_storage) + W2 * (stones_on_my_side – stones_on_opponents_side) + W3 * (additional_move_earned)
 
-#heuristic-4: The evaluation function is
+# heuristic-4: The evaluation function is
 W1 * (stones_in_my_storage – stones_in_opponents_storage) + W2 * (stones_on_my_side – stones_on_opponents_side)  + W3 * (additional_move_earned) + W4 * (stones_captured)
